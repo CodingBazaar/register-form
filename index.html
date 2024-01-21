@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Register Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="upper"></div>
+    <div class="background-gradient">
+        <div class="container">
+            <div class="text-area">
+                <h1>Sample Heading</h1>
+                <ol>
+                    <li>First item - lorem ipsum dolor sit</li>
+                    <li>Second item - lorem ipsum dolor sit</li>
+                    <li>Third item - lorem ipsum dolor sit</li>
+                    <li>Fourth item - lorem ipsum dolor sit</li>
+                </ol>
+            </div>
+            <div class="form-area">
+                <form id="registerForm">
+                    <h2>Create an account</h2>
+                    <label class="bold-label" for="email">Enter your email</label>
+                    <input class="input-fields" type="email" id="email" name="email">
+                    <div class="error-message" id="emailError"></div>
+
+                    <label class="bold-label for="dob">Date of Birth <small>(optional)</small></label>
+                    <div class="input-container">
+                        <div class="date-input">
+                            <label class="small-label" for="day"><small>Day</small></label>
+                            <select id="day" name="day">
+                                <option value="">Date</option>
+                            </select>
+                            <!-- <div class="error-message" id="dayError"></div> -->
+                        </div>
+                        <div class="date-input">
+                            <label class="small-label" for="month"><small>Month</small></label>
+                            <select id="month" name="month">
+                                <option value="">Month</option>
+                            </select>
+                            <div class="error-message" id="monthError"></div>
+                        </div>
+                        <div class="date-input">
+                            <label class="small-label" for="year"><small>Year</small></label>
+                            <select id="year" name="year">
+                                <option value="">Year</option>
+                            </select>
+                            <div class="error-message" id="yearError"></div>
+                        </div>
+                    </div>
+                    <div class="error-message" id="dayError"></div>
+
+                    <label class="bold-label for="password">Choose a strong password</label>
+                    <input class="input-fields" type="password" id="password" name="password">
+                    <div class="error-message" id="passwordError"></div>
+
+                    <label class="bold-label">Are you an agency or individual?</label>
+                    <div class="radio-buttons">
+                        <label><input type="radio" name="userType" value="agency"> Agency</label>
+                        <label><input type="radio" name="userType" value="individual"> Individual</label>
+                    </div>
+                    <div class="error-message" id="userTypeError"></div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>
